@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .search{
+     background-image: url(images/search.png);/*设置小图标*/
+     background-size: 20px 20px;/*小图标的大小*/
+     background-position: 8px 10px;/*小图标在input的位置*/
+     background-repeat: no-repeat;/*背景小图标不重复*/
+     padding: 8px 8px 4px 35px;
+     border:1px solid #ddd;
+     margin: 10px;
+     width: 70%;
+     border-radius:10px;
+     font-size: 20px;
+     height: 28px;
+     display: inline;
+     }
+     .clock{
+         height: 35px; 
+     }
+     .title{
+         color: #111111;
+         font-weight: bold;
+         font-size: 20px;
+         padding: 10px;
+         display:inline;
+         float: left;
+     }
+     .more{
+         float: right;
+         margin: 10px;
+         color: #587bff;
+         display:block;
+         }
+     .pop{
+         float: left;
+         display: inline;
+         margin: 0px 8px; 
+         font-size: 12px;
+         
+     }
+     .popitem{
+         overflow-x:auto;
+         overflow-y:hidden;
+         display: flex;
+     }
+     
+     .fav{
+        float: left;
+        display: inline;
+        margin: 10px;
+     }
+     .read{
+        float: left;
+        display: inline;
+        margin: 15px;
+        
+        }
+     .readinglist{
+        overflow-x:auto;
+        overflow-y:hidden;
+        display: flex;
+     }
+        
+     .clear{
+         clear: both;
+         visibility: hidden;
+     }
+
+   
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>书店</title>
+</head>
+<body>
+
+
+        <div class="header">
+           <input type="text" class="search" placeholder="Search" value="">
+           <img class="clock" src="./images/clock.png" alt="">  
+        </div>
+        
+        
+        <div class="content">
+            
+             <div class="poplist">
+                    <h1 class="title">Popular</h1><span class="more">View All</span>
+                    <div class="clear">aaa</div>
+                 <div class="popitem">  
+                    <div class="pop">
+                       <img src="./images/pop1.png" alt="">
+                       <h2>The Window </h2>
+                       <span>Fiona Barton</span>
+                    </div> 
+                    <div class="pop">
+                       <img src="./images/pop2.png" alt="">
+                       <h2>What We Lose:A Novel </h2>
+                       <span>Zinzi Clemmons</span>
+                    </div>
+                    <div class="pop">
+                       <img src="./images/pop4.png" alt="">
+                       <h2>The Hobbit </h2>
+                       <span>J.R.R Tolkien </span>
+                    </div> 
+                </div>   
+             </div>
+
+             <div class="clear">aaa</div>
+
+             <div class="favitem">
+                   <h1 class="title">Favorites</h1><span class="more">View All</span>
+                   <div class="clear">aaa</div>
+                   <div class="fav">
+                       <img src="./images/fav_1.png" alt="">
+                   </div>
+                   <div class="fav">
+                       <img src="./images/fav_2.png" alt="">
+                   </div>
+             </div>
+             <div class="clear">aaa</div>
+             <div class="reading">
+                    <h1 class="title">Reading</h1><span class="more">View All</span>
+                    <div class="clear">aaa</div>
+                    <div class="readinglist">
+                        <div class="read">
+                            <img src="./images/reading1.png" alt="">
+                        </div>
+                    
+                         <div class="read">
+                            <img src="./images/reading2.png" alt="">
+                        </div>
+                   
+                        <div class="read">
+                            <img src="./images/reading3.png" alt="">
+                        </div>
+                        <div class="read">
+                            <img src="./images/reading5.png" alt="">
+                        </div>
+                    </div>
+             </div>
+        </div>
+
+  
+</body>
+</html>
